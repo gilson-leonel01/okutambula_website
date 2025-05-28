@@ -21,7 +21,7 @@ cd okutambula_website
 
 ### 2️⃣ Configuração do Ambiente
 
-#### Backend (Next.js, Prisma ORM, PostgreSQL)
+#### Backend (NestJS, Prisma ORM, PostgreSQL)
 
 ##### 📌 Pré-requisitos:
 - Node.js instalado (versão 16+ recomendada).
@@ -43,7 +43,7 @@ cd okutambula_website
    npm run dev
    ```
 
-### 3️⃣ Frontend (React.js, Zod, ReactQuery/Router, Vite, Tailwind CSS, Lucide)
+### 3️⃣ Frontend (NextJS, Zod, ReactQuery/Router, Tailwind CSS, Lucide)
 
 1. Acesse o diretório do frontend:
    ```sh
@@ -58,7 +58,9 @@ cd okutambula_website
    npm run dev
    ```
 
-A aplicação estará disponível em para frontend: `http://localhost:3000` & backend: `http://localhost:3001`.
+A aplicação estará disponível para: 
+frontend: `http://localhost:3000` 
+backend: `http://localhost:3001`.
 
 ## 📝 Funcionalidades
 
@@ -70,13 +72,12 @@ A aplicação estará disponível em para frontend: `http://localhost:3000` & ba
 ## 🛠️ Tecnologias Utilizadas
 
 ### 🔹 Backend:
-- Next.js
+- NestJS
 - Prisma ORM
 - PostgreSQL
 
 ### 🔹 Frontend:
-- React.js
-- Vite
+- NextJS
 - React Router
 - React Query
 - Tailwind CSS
@@ -101,5 +102,5 @@ Contribuições são bem-vindas! Para contribuir:
 
 ---
 
-Desenvolvido com 💙 por [Gilson Leonel a.k.a G!](https://github.com/gilson-leonel01)
+Desenvolvido com 💙 por [G!](https://github.com/gilson-leonel01) & [Yuran Simão](https://github.com/yuransimao)
 
