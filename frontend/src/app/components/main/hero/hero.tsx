@@ -1,7 +1,6 @@
 'use client'
 import { gsap } from 'gsap';
 import { useEffect } from 'react';
-import { CircleCheck } from "lucide-react";
 
 export function Hero() {
     useEffect(() => {

@@ -1,13 +1,9 @@
-// import { gsap } from 'gsap';
 'use client'
 import React, { useEffect, useRef } from 'react';
 import { Target, Telescope, HandCoins } from 'lucide-react';
 
 export function MissionVisionValues() {
     const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-    //     useEffect(() => {
-    //         gsap.from('.card', { x: -100, opacity: 0, duration: 1, stagger: 0.3 });
-    //     }, []);
     useEffect(() => {
         cardsRef.current.forEach((card, index) => {
             if (card) {

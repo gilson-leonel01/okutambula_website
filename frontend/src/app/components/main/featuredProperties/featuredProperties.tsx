@@ -1,15 +1,8 @@
 "use client";
-import Image from "next/image";
-import kilamba from "./kilamba.jpg";
-// import sequele from "./sequele.jpg";
-// import cidadeAlta from "./cidadeAlta.jpg";
-
-
-
 import gsap from "gsap";
+import Image from "next/image";
 import { useEffect } from "react";
-// import { Search } from "lucide-react";
-// import { Button } from "@/components/ui/button";
+import kilamba from "./kilamba.jpg";
 
 export function FeaturedProperties() {
     useEffect(() => {
