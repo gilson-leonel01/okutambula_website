@@ -1,5 +1,5 @@
+import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {Search} from "lucide-react";
 
 export function ResearchBased() {
     return(
