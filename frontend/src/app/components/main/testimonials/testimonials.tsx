@@ -28,35 +28,35 @@ export function Testimonials() {
             <div className="flex gap-4 testimonial">
                 <Card className="min-w-[300px]">
                     <CardContent>
-                        <p>"Ótimo serviço!"</p>
+                        <p>Ótimo serviço!</p>
                         <p>- Cliente 1</p>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
                     <CardContent>
-                        <p>"Recomendo muito!"</p>
+                        <p>Recomendo muito!</p>
                         <p>- Cliente 2</p>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
                     <CardContent>
-                        <p>"Recomendo muito!"</p>
+                        <p>Recomendo muito!</p>
                         <p>- Cliente 3</p>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
                     <CardContent>
-                        <p>"Recomendo muito!"</p>
+                        <p>Recomendo muito!</p>
                         <p>- Cliente 4</p>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
                     <CardContent>
-                        <p>"Recomendo muito!"</p>
+                        <p>Recomendo muito!</p>
                         <p>- Cliente 5</p>
                     </CardContent>
                 </Card>
@@ -68,7 +68,7 @@ export function Testimonials() {
                         </div>
                     </CardHeader>
                     <CardContent>
-                        <p>"Recomendo muito!"</p>
+                        <p>Recomendo muito!</p>
                         <p>- Cliente 6</p>
                     </CardContent>
                 </Card>
@@ -80,14 +80,14 @@ export function Testimonials() {
                         </div>
                     </CardHeader>
                     <CardContent>
-                        <p>"Recomendo muito!"</p>
+                        <p>Recomendo muito!</p>
                         <p>- Cliente 7</p>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
                     <CardContent>
-                        <p>"Recomendo muito!"</p>
+                        <p>Recomendo muito!</p>
                         <p>- Cliente 6</p>
                     </CardContent>
                 </Card>
