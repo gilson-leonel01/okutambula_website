@@ -1,7 +1,10 @@
 'use client'
 import { gsap } from 'gsap';
+import Image from 'next/image';
 import { useEffect } from 'react';
-import {Card, CardContent, CardHeader} from '@/components/ui/card';
+import male from "./male_avatar.svg";
+import female from "./female_avatar.svg";
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 export function Testimonials() {
     useEffect(() => {
@@ -61,8 +64,7 @@ export function Testimonials() {
                 <Card className="min-w-[300px]">
                     <CardHeader>
                         <div>
-                            <img alt="Avatar" src="https//:localhost2" />
-
+                            <Image alt="Avatar" src={male} />
                         </div>
                     </CardHeader>
                     <CardContent>
@@ -72,6 +74,11 @@ export function Testimonials() {
                 </Card>
 
                 <Card className="min-w-[300px]">
+                    <CardHeader>
+                        <div>
+                            <Image alt="Avatar" src={female} />
+                        </div>
+                    </CardHeader>
                     <CardContent>
                         <p>"Recomendo muito!"</p>
                         <p>- Cliente 7</p>
