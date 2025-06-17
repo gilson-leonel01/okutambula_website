@@ -1,0 +1,23 @@
+import { Button } from "@/components/ui/button";
+import {Search} from "lucide-react";
+
+export function ResearchBased() {
+    return(
+        <section className="container mx-auto px-6 py-8">
+            <div className="flex justify-between items-center mb-8">
+                <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Baseado nas tuas pesquisas</h3>
+                    <p className="text-base text-gray-600">Propriedades que você visualizou recentemente</p>
+                </div>
+                <Button
+                    variant="default"
+                    className="text-xl flex items-center gap-2"
+                    onClick={(e) => e.preventDefault()}
+                >
+                    <Search className="w-5 h-5" />
+                    Procurar mais casas
+                </Button>
+            </div>
+        </section>
+    );
+}
