@@ -19,9 +19,7 @@ git clone https://github.com/gilson-leonel01/okutambula_website.git
 cd okutambula_website
 ```
 
-### 2️⃣ Configuração do Ambiente
-
-#### Backend (NestJS, Prisma ORM, PostgreSQL)
+### 2️⃣ Backend (NestJS, Prisma ORM, PostgreSQL)
 
 ##### 📌 Pré-requisitos:
 - Node.js instalado (versão 16+ recomendada).
