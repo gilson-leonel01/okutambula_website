@@ -23,10 +23,10 @@ export function MissionVisionValues() {
     };
 
     return (
-        <section className="py-16 px-6 bg-white">
+        <section id="aboutUs" className="py-16 px-6 bg-white">
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div ref={(el) => setCardRef(el, 0)} className="mvv-card bg-gradient-to-br from-red-500 to-red-600 text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div ref={(el) => setCardRef(el, 0)} className="mvv-card bg-gradient-to-br from-indigo-200 to-red-500 text-black p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                         <div className="flex flex-col items-center text-center">
                             <Target className="w-12 h-12 mb-4" />
                             <h3 className="text-2xl font-bold mb-6">Missão</h3>
@@ -39,7 +39,7 @@ export function MissionVisionValues() {
                         </div>
                     </div>
 
-                    <div ref={(el) => setCardRef(el, 1)} className="mvv-card bg-gradient-to-br from-yellow-400 to-yellow-500 text-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div ref={(el) => setCardRef(el, 1)} className="mvv-card bg-gradient-to-br from-teal-200 to-yellow-400 text-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                         <div className="flex flex-col items-center text-center">
                             <Telescope className="w-12 h-12 mb-4" />
                             <h3 className="text-2xl font-bold mb-6">Visão</h3>
@@ -52,7 +52,7 @@ export function MissionVisionValues() {
                         </div>
                     </div>
 
-                    <div ref={(el) => setCardRef(el, 2)} className="mvv-card bg-gradient-to-br from-green-400 to-green-500 text-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div ref={(el) => setCardRef(el, 2)} className="mvv-card bg-gradient-to-br from-slate-400 to-green-400 text-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                         <div className="flex flex-col items-center text-center">
                             <HandCoins className="w-12 h-12 mb-4" />
                             <h3 className="text-2xl font-bold mb-6">Valores</h3>

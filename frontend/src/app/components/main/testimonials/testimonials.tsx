@@ -1,10 +1,15 @@
 'use client'
 import { gsap } from 'gsap';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import male from "./male_avatar.svg";
 import female from "./female_avatar.svg";
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import StarButton from "@/components/ui/starButton";
+import {
+    Card,
+    CardContent,
+    CardHeader
+} from '@/components/ui/card';
 
 export function Testimonials() {
     useEffect(() => {
@@ -20,75 +25,101 @@ export function Testimonials() {
         <section className="overflow-hidden p-6">
             <div>
                 <h4 className="text-2xl font-bold text-center uppercase">Testemunhos</h4>
-                <p className="text-lg  text-center">
+                <p className="text-lg text-center">
                     Veja o que alguns dos nossos clientes, intermediarios, e vendedores dizem sobre o nosso serviço
                 </p>
             </div>
 
-            <div className="flex gap-4 testimonial">
+            <div className="flex gap-4 testimonial mt-6">
                 <Card className="min-w-[300px]">
+                    <CardHeader className="flex gap-2 justify-between">
+                        <Image alt="Avatar" src={male} className="w-12 h-12" />
+                        <div className="flex-col gap-2 items-end">
+                            <h3 className="font-semibold">Yuran Simão</h3>
+                            <p>Engenheiro Informático</p>
+                        </div>
+                    </CardHeader>
+
+                    <div className="border-t border-slate-400 w-64 mx-auto"></div>
+
                     <CardContent>
                         <p>Ótimo serviço!</p>
-                        <p>- Cliente 1</p>
+                        <div className="flex gap-2">
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                        </div>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
-                    <CardContent>
-                        <p>Recomendo muito!</p>
-                        <p>- Cliente 2</p>
-                    </CardContent>
-                </Card>
-
-                <Card className="min-w-[300px]">
-                    <CardContent>
-                        <p>Recomendo muito!</p>
-                        <p>- Cliente 3</p>
-                    </CardContent>
-                </Card>
-
-                <Card className="min-w-[300px]">
-                    <CardContent>
-                        <p>Recomendo muito!</p>
-                        <p>- Cliente 4</p>
-                    </CardContent>
-                </Card>
-
-                <Card className="min-w-[300px]">
-                    <CardContent>
-                        <p>Recomendo muito!</p>
-                        <p>- Cliente 5</p>
-                    </CardContent>
-                </Card>
-
-                <Card className="min-w-[300px]">
-                    <CardHeader>
-                        <div>
-                            <Image alt="Avatar" src={male} />
+                    <CardHeader className="flex gap-2 justify-between">
+                        <Image alt="Avatar" src={female} className="w-12 h-12" />
+                        <div className="flex-col gap-2 items-end">
+                            <h3 className="font-semibold">Luana Cahanda</h3>
+                            <p>Engenheira Informática</p>
                         </div>
                     </CardHeader>
+
+                    <div className="border-t border-slate-400 w-64 mx-auto"></div>
+
                     <CardContent>
                         <p>Recomendo muito!</p>
-                        <p>- Cliente 6</p>
+                        <div className="flex gap-2">
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                        </div>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
-                    <CardHeader>
-                        <div>
-                            <Image alt="Avatar" src={female} />
+                    <CardHeader className="flex gap-2 justify-between">
+                        <Image alt="Avatar" src={male} className="w-12 h-12" />
+                        <div className="flex-col gap-2 items-end">
+                            <h3 className="font-semibold">Mandele Tomás</h3>
+                            <p>Engenheiro Informático</p>
                         </div>
                     </CardHeader>
+
+                    <div className="border-t border-slate-400 w-64 mx-auto"></div>
+
                     <CardContent>
-                        <p>Recomendo muito!</p>
-                        <p>- Cliente 7</p>
+                        <p>Excelente serviço!</p>
+                        <div className="flex gap-2">
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                        </div>
                     </CardContent>
                 </Card>
 
                 <Card className="min-w-[300px]">
+                    <CardHeader className="flex gap-2 justify-between">
+                        <Image alt="Avatar" src={female} className="w-12 h-12" />
+                        <div className="flex-col gap-2 items-end">
+                            <h3 className="font-semibold">Isabel Tomás</h3>
+                            <p>Engenheira Informática</p>
+                        </div>
+                    </CardHeader>
+
+                    <div className="border-t border-slate-400 w-64 mx-auto"></div>
+
                     <CardContent>
-                        <p>Recomendo muito!</p>
-                        <p>- Cliente 6</p>
+                        <p>Liguem muito!</p>
+                        <div className="flex gap-2">
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                            <StarButton />
+                        </div>
                     </CardContent>
                 </Card>
             </div>

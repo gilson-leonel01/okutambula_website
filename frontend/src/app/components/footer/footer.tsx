@@ -1,8 +1,8 @@
 'use client'
 import Image from "next/image";
 import { Mail, Phone } from 'lucide-react';
-import logo from "../../../../public/logo.svg";
 import React, { useEffect, useRef } from 'react';
+import logo from "../../../../public/./logoWhite.svg";
 
 export const Footer: React.FC = () => {
     const footerRef = useRef<HTMLElement>(null);
@@ -37,42 +37,42 @@ export const Footer: React.FC = () => {
         logo: <Image alt="Logo" src={logo} />,
         columns: [
             {
-                title: "Lorem",
+                title: "Oportunidades",
                 links: [
-                    "Ipsum",
-                    "Ipsum & Lorem",
-                    "Ipsum & Lestrat",
-                    "Ipsum Tiesm"
+                    "Promoções",
+                    "Visita 3D do Imóvel",
+                    "Chatbot para Dúvidas",
+                    "Anuncie o seu Imóvel",
                 ]
             },
             {
-                title: "Ipsum",
+                title: "Torne-se",
                 links: [
-                    "Ipsum",
-                    "Ipsum & Lorem",
-                    "Ipsum & Lestrat",
-                    "Ipsum Tiesm"
+                    "Agência",
+                    "Promotor",
+                    "Consultor",
+                    "Intermediário",
                 ]
             },
             {
-                title: "Lestrart",
+                title: "Propriedades",
                 links: [
-                    "Ipsum",
-                    "Ipsum & Lorem",
-                    "Ipsum & Lestrat",
-                    "Ipsum Tiesm"
+                    "Alugar",
+                    "Vender",
+                    "Comprar",
                 ]
             }
         ],
         contact: {
             title: "Contactos",
             email: "geral@contacto.gmail.com",
-            phone: "923456789 / 912345678"
+            phone: "923456789 / 912345678",
         }
     };
 
     return (
         <footer
+            id="contacts"
             ref={footerRef}
             className="bg-slate-800 text-white py-16 px-6 md:px-12 lg:px-20"
         >

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function ResearchBased() {
     return(
-        <section className="container mx-auto px-6 py-8">
+        <section id="services" className="container mx-auto px-6 py-8">
             <div className="flex justify-between items-center mb-8">
                 <div>
                     <h3 className="text-2xl font-bold text-gray-900">Baseado nas tuas pesquisas</h3>

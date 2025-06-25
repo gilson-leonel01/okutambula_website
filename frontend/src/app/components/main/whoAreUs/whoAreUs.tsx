@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function WhoAreUs() {
     return (
-        <section className="relative py-16 px-6 bg-gray-50">
+        <section id="aboutUs" className="relative py-16 px-6 bg-gray-50">
             <div className="absolute inset-0 z-0">
                 <Image
                     fill
