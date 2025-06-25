@@ -61,7 +61,7 @@ export function ContactForm() {
         mensagem: ''
     });
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: { target: { name: string; value: string; }; }) => {
         const { name, value } = e.target;
         setFormData(prev => ({
             ...prev,
