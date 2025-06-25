@@ -1,7 +1,8 @@
 export function Separator() {
     return(
         <section
-            className="relative p-8 mt-12 h-64 bg-cover bg-center bg-no-repeat rounded-lg overflow-hidden"
+            id="services"
+            className="relative p-8 mt-12 h-64 bg-cover bg-center bg-no-repeat overflow-hidden"
         >
             <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
