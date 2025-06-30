@@ -100,5 +100,5 @@ Contribuições são bem-vindas! Para contribuir:
 
 ---
 
-Desenvolvido com 💙 por [G!](https://github.com/gilson-leonel01) & [Yuran Simão](https://github.com/yuransimao)
+Desenvolvido com 💙 por [G!](https://github.com/gilson-leonel01)
 
