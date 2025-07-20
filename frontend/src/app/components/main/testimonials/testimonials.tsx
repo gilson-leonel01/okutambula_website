@@ -4,7 +4,6 @@ import Image from 'next/image';
 import React, { useEffect } from 'react';
 import male from "./male_avatar.svg";
 import female from "./female_avatar.svg";
-import StarButton from "@/components/ui/starButton";
 import {
     Card,
     CardContent,
@@ -24,7 +23,7 @@ export function Testimonials() {
     return (
         <section className="overflow-hidden p-6">
             <div>
-                <h4 className="text-2xl font-bold text-center uppercase">Testemunhos</h4>
+                <h4 className="text-2xl font-bold text-center text-gray-900 uppercase">Testemunhos</h4>
                 <p className="text-lg text-center">
                     Veja o que alguns dos nossos clientes, intermediarios, e vendedores dizem sobre o nosso serviço
                 </p>
@@ -45,11 +44,10 @@ export function Testimonials() {
                     <CardContent>
                         <p>Ótimo serviço!</p>
                         <div className="flex gap-2">
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                         </div>
                     </CardContent>
                 </Card>
@@ -68,11 +66,8 @@ export function Testimonials() {
                     <CardContent>
                         <p>Recomendo muito!</p>
                         <div className="flex gap-2">
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                         </div>
                     </CardContent>
                 </Card>
@@ -91,11 +86,11 @@ export function Testimonials() {
                     <CardContent>
                         <p>Excelente serviço!</p>
                         <div className="flex gap-2">
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                         </div>
                     </CardContent>
                 </Card>
@@ -114,11 +109,9 @@ export function Testimonials() {
                     <CardContent>
                         <p>Liguem muito!</p>
                         <div className="flex gap-2">
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
+                            <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                         </div>
                     </CardContent>
                 </Card>

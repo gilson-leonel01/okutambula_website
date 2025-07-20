@@ -10,7 +10,7 @@ export default function LikeButton() {
     return (
         <button
             onClick={toggleLike}
-            className={`mt-2 flex items-center gap-1 ${
+            className={`mt-2 flex items-center gap-1 hover:cursor-pointer ${
                 liked ? "text-pink-700" : "text-gray-500"
             } hover:text-pink-700`}
         >
