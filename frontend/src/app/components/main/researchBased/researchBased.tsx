@@ -11,7 +11,7 @@ export function ResearchBased() {
                 </div>
                 <Button
                     variant="default"
-                    className="text-xl flex items-center gap-2"
+                    className="text-xl flex items-center gap-2 hover:cursor-pointer"
                     onClick={(e) => e.preventDefault()}
                 >
                     <Search className="w-5 h-5" />

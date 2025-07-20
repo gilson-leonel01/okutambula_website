@@ -4,11 +4,13 @@ import Image from "next/image";
 import { useState } from "react";
 import { Navbar } from "./navbar/navbar";
 import { User, Menu } from "lucide-react";
+import {useRouter} from "next/navigation";
 import { Button } from "@/components/ui/button";
 import logo from "../../../../public/./logoBlack.svg";
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const router = useRouter();
 
     return (
         <header className="relative ml-14 pr-6 mb-6">
@@ -28,6 +30,11 @@ export function Header() {
                 </Button>
 
                 <div className="hidden md:flex items-center">
+                    <Button
+                        variant="default"
+                        className="flex items-center gap-2"
+                        onClick={() => router.push("/login")}
+                    >
                     <Button variant="default" className="flex items-center gap-2">
                         <User className="w-5 h-5" />
                         <span className="uppercase">Entrar</span>
