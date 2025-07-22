@@ -24,7 +24,6 @@ export function Testimonials() {
         <section className="overflow-hidden p-6">
             <div>
                 <h4 className="text-2xl font-bold text-center text-gray-900 uppercase">Testemunhos</h4>
-                <h4 className="text-2xl font-bold text-center uppercase">Testemunhos</h4>
                 <p className="text-lg text-center">
                     Veja o que alguns dos nossos clientes, intermediarios, e vendedores dizem sobre o nosso serviço
                 </p>

@@ -18,7 +18,6 @@ export function Main() {
             <MissionVisionValues />
             <ResearchBased />
             <FeaturedProperties />
-            <GetInTouch />
             <Testimonials />
             <FAQ />
             <GetInTouch />
