@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
-import { User, Building, Users } from 'lucide-react';
+import { User, Building, Users, LucideIcon } from 'lucide-react';
+
+interface Role {
+    id: string;
+    title: string;
+    description: string;
+    icon: LucideIcon;
+    color: string;
+}
 
 export default function UserRoleSelection() {
-    const [selectedRole, setSelectedRole] = useState('');
+    const [selectedRole, setSelectedRole] = useState<string>('');
 
-    const roles = [
+    const roles: Role[] = [
         {
             id: 'comprador',
             title: 'COMPRADOR',
@@ -28,12 +36,12 @@ export default function UserRoleSelection() {
         }
     ];
 
-    const handleRoleSelect = (roleId) => {
+    const handleRoleSelect = (roleId: string) => {
         setSelectedRole(roleId);
     };
 
     const handleNext = () => {
-        if (selectedRole) {
+        if(selectedRole) {
             console.log(`Selected role: ${selectedRole}`);
         }
     };
@@ -53,7 +61,7 @@ export default function UserRoleSelection() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                        {roles.map((role) => {
+                        {roles.map((role: Role) => {
                             const IconComponent = role.icon;
                             const isSelected = selectedRole === role.id;
 

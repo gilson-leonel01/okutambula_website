@@ -1,34 +1,48 @@
 import React, { useState } from 'react';
 import { Save } from 'lucide-react';
 
+interface FormData {
+    telefone: string;
+    bi: string;
+    morada: string;
+    cidade: string;
+    nascimento: string;
+    profissao: string;
+}
+
 export default function DataFinalizationForm() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         telefone: '',
         bi: '',
         morada: '',
         cidade: '',
         nascimento: '',
-        profissao: ''
+        profissao: '',
     });
 
-    const handleInputChange = (field, value) => {
-        setFormData(prev => ({
+    const handleInputChange = (field: keyof FormData, value: string): void => {
+        setFormData((prev) => ({
             ...prev,
-            [field]: value
+            [field]: value,
         }));
     };
 
-    const handleSave = () => {
+    const handleSave = (): void => {
         console.log('Saving data:', formData);
     };
 
-    const handleFinalize = () => {
+    const handleFinalize = (): void => {
         console.log('Finalizing registration:', formData);
     };
 
-    const isFormValid = () => {
-        return formData.telefone && formData.bi && formData.morada &&
-            formData.cidade && formData.nascimento;
+    const isFormValid = (): boolean => {
+        return (
+            formData.telefone.trim() !== '' &&
+            formData.bi.trim() !== '' &&
+            formData.morada.trim() !== '' &&
+            formData.cidade.trim() !== '' &&
+            formData.nascimento.trim() !== ''
+        );
     };
 
     return (
@@ -47,65 +61,53 @@ export default function DataFinalizationForm() {
 
                     <div className="bg-white rounded-lg shadow-lg p-8 mb-16">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <input
-                                    type="tel"
-                                    placeholder="Numero de telefone"
-                                    value={formData.telefone}
-                                    onChange={(e) => handleInputChange('telefone', e.target.value)}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
-                                />
-                            </div>
+                            <input
+                                type="tel"
+                                placeholder="Número de telefone"
+                                value={formData.telefone}
+                                onChange={(e) => handleInputChange('telefone', e.target.value)}
+                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
+                            />
 
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder="Numero de B.I"
-                                    value={formData.bi}
-                                    onChange={(e) => handleInputChange('bi', e.target.value)}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
-                                />
-                            </div>
+                            <input
+                                type="text"
+                                placeholder="Número de B.I"
+                                value={formData.bi}
+                                onChange={(e) => handleInputChange('bi', e.target.value)}
+                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
+                            />
 
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder="Sua morada"
-                                    value={formData.morada}
-                                    onChange={(e) => handleInputChange('morada', e.target.value)}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
-                                />
-                            </div>
+                            <input
+                                type="text"
+                                placeholder="Sua morada"
+                                value={formData.morada}
+                                onChange={(e) => handleInputChange('morada', e.target.value)}
+                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
+                            />
 
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder="Cidade"
-                                    value={formData.cidade}
-                                    onChange={(e) => handleInputChange('cidade', e.target.value)}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
-                                />
-                            </div>
+                            <input
+                                type="text"
+                                placeholder="Cidade"
+                                value={formData.cidade}
+                                onChange={(e) => handleInputChange('cidade', e.target.value)}
+                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
+                            />
 
-                            <div>
-                                <input
-                                    type="date"
-                                    placeholder="Sua data de nascimento"
-                                    value={formData.nascimento}
-                                    onChange={(e) => handleInputChange('nascimento', e.target.value)}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
-                                />
-                            </div>
+                            <input
+                                type="date"
+                                placeholder="Sua data de nascimento"
+                                value={formData.nascimento}
+                                onChange={(e) => handleInputChange('nascimento', e.target.value)}
+                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
+                            />
 
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder="Profissão (opcional)"
-                                    value={formData.profissao}
-                                    onChange={(e) => handleInputChange('profissao', e.target.value)}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
-                                />
-                            </div>
+                            <input
+                                type="text"
+                                placeholder="Profissão (opcional)"
+                                value={formData.profissao}
+                                onChange={(e) => handleInputChange('profissao', e.target.value)}
+                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-600"
+                            />
                         </div>
 
                         <div className="flex justify-end mt-8">
@@ -123,13 +125,11 @@ export default function DataFinalizationForm() {
                         <button
                             onClick={handleFinalize}
                             disabled={!isFormValid()}
-                            className={`
-                px-12 py-3 rounded-lg font-semibold text-lg transition-all duration-300
-                ${isFormValid()
+                            className={`px-12 py-3 rounded-lg font-semibold text-lg transition-all duration-300
+                                ${isFormValid()
                                 ? 'bg-transparent text-blue-500 border-2 border-blue-500 hover:bg-blue-500 hover:text-white'
                                 : 'bg-gray-300 text-gray-500 cursor-not-allowed border-2 border-gray-300'
-                            }
-              `}
+                            }`}
                         >
                             Finalizar
                         </button>

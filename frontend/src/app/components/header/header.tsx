@@ -4,13 +4,18 @@ import Image from "next/image";
 import { useState } from "react";
 import { Navbar } from "./navbar/navbar";
 import { User, Menu } from "lucide-react";
-import {useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import logo from "../../../../public/./logoBlack.svg";
+import logo from "../../../../public/logoBlack.svg";
 
 export function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const router = useRouter();
+
+    const handleLoginRedirect = () => {
+        setIsMenuOpen(false);
+        router.push("/login");
+    };
 
     return (
         <header className="relative ml-14 pr-6 mb-6">
@@ -33,9 +38,8 @@ export function Header() {
                     <Button
                         variant="default"
                         className="flex items-center gap-2"
-                        onClick={() => router.push("/login")}
+                        onClick={handleLoginRedirect}
                     >
-                    <Button variant="default" className="flex items-center gap-2">
                         <User className="w-5 h-5" />
                         <span className="uppercase">Entrar</span>
                     </Button>
@@ -46,51 +50,28 @@ export function Header() {
                 <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md z-50">
                     <nav className="p-4">
                         <ul className="flex flex-col gap-4 text-lg mb-4">
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="block py-2 hover:text-zinc-600"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Início
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="/#aboutUs"
-                                    className="block py-2 hover:text-zinc-600"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Sobre Nós
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="/#services"
-                                    className="block py-2 hover:text-zinc-600"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Serviços
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="/#contacts"
-                                    className="block py-2 hover:text-zinc-600"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Contactos
-                                </Link>
-                            </li>
+                            {[
+                                { label: "Início", href: "/" },
+                                { label: "Sobre Nós", href: "/#aboutUs" },
+                                { label: "Serviços", href: "/#services" },
+                                { label: "Contactos", href: "/#contacts" },
+                            ].map((item) => (
+                                <li key={item.href}>
+                                    <Link
+                                        href={item.href}
+                                        className="block py-2 hover:text-zinc-600"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {item.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
 
                         <Button
                             variant="default"
                             className="flex items-center gap-2 w-full justify-center"
-                            onClick={() => setIsMenuOpen(false)}
+                            onClick={handleLoginRedirect}
                         >
                             <User className="w-5 h-5" />
                             <span className="uppercase">Entrar</span>

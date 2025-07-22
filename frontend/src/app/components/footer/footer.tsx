@@ -4,7 +4,7 @@ import { Mail, Phone } from 'lucide-react';
 import React, { useEffect, useRef } from 'react';
 import logo from "../../../../public/./logoWhite.svg";
 
-export const Footer: React.FC = () => {
+export default function Footer () {
     const footerRef = useRef<HTMLElement>(null);
     const currentYear = new Date().getFullYear();
 

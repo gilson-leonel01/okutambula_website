@@ -1,13 +1,21 @@
 import { useState } from "react";
 
+interface FormData {
+    nome: string;
+    email: string;
+    mensagem: string;
+}
+
 export function ContactForm() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         nome: '',
         email: '',
         mensagem: ''
     });
 
-    const handleInputChange = (e:React.ChangeEvent<HTMLInputElement>):void => {
+    const handleInputChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ): void => {
         const { name, value } = e.target;
         setFormData(prev => ({
             ...prev,
@@ -15,11 +23,11 @@ export function ContactForm() {
         }));
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (): void => {
         console.log('Form submitted:', formData);
     };
 
-    return(
+    return (
         <div className="px-6 pb-8">
             <div className="mb-6">
                 <label className="block text-base font-medium text-gray-900 mb-2">
@@ -59,7 +67,6 @@ export function ContactForm() {
                     onChange={handleInputChange}
                     placeholder="Insira a sua mensagem"
                     className="w-full px-0 py-3 text-gray-900 placeholder-gray-500 bg-transparent border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-0 resize-none transition-colors"
-
                 />
             </div>
 
