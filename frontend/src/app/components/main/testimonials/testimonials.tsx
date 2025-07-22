@@ -4,7 +4,6 @@ import Image from 'next/image';
 import male from "./male_avatar.svg";
 import female from "./female_avatar.svg";
 import React, { useEffect } from 'react';
-import StarButton from "@/components/ui/starButton";
 import {
     Card,
     CardContent,
@@ -50,11 +49,6 @@ export function Testimonials() {
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
                         </div>
                     </CardContent>
                 </Card>
@@ -75,11 +69,6 @@ export function Testimonials() {
                         <div className="flex gap-2">
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
                         </div>
                     </CardContent>
                 </Card>
@@ -103,11 +92,6 @@ export function Testimonials() {
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
                         </div>
                     </CardContent>
                 </Card>
@@ -129,11 +113,6 @@ export function Testimonials() {
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
                             <span className="mt-2 flex items-center gap-1 text-amber-500">★</span>
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
-                            <StarButton />
                         </div>
                     </CardContent>
                 </Card>

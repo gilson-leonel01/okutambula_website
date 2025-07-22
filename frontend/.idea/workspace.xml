@@ -13,17 +13,6 @@
       <change beforePath="$PROJECT_DIR$/../.idea/okutambula_website.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/prettier.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/main/faq/faq.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/main/faq/faq.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/main/getInTouch/contactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/main/getInTouch/contactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/main/getInTouch/getInTouch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/main/getInTouch/getInTouch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/main/hero/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/main/hero/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/dataFinalizationForm/dataFinalizationForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dataFinalizationForm/dataFinalizationForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/login/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/userRoleSelection/userRoleSelection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/userRoleSelection/userRoleSelection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/likeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/likeButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/starButton.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753118306128</updated>
-      <workItem from="1753118310781" duration="10825000" />
+      <workItem from="1753118310781" duration="11146000" />
     </task>
     <servers />
   </component>
